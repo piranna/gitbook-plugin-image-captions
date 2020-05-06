@@ -24,7 +24,8 @@
   },
   "dependencies": {
     "cheerio": "~0.20.0",
-    "q": "^1.4.1"
+    "q": "^1.4.1",
+    "snyk": "^1.319.1"
   },
   "devDependencies": {
     "mocha": "2.3.4",
@@ -33,6 +34,9 @@
   },
   "scripts": {
     "pretest": "jshint index.js spec/**.js",
-    "test": "node_modules/.bin/mocha --reporter spec --timeout 15000 spec"
-  }
+    "test": "node_modules/.bin/mocha --reporter spec --timeout 15000 spec",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
