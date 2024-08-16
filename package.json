@@ -23,7 +23,7 @@
     "url": "https://github.com/todvora/gitbook-plugin-image-captions/issues"
   },
   "dependencies": {
-    "cheerio": "~0.20.0",
+    "cheerio": "~1.0.0",
     "q": "^1.4.1"
   },
   "devDependencies": {
